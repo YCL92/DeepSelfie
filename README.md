@@ -1,6 +1,6 @@
 # DeepSelfie: Single-shot Low-light Enhancement for Selfies
 
-If you are interested in using our code and finding it useful in your research, please consider citing the following paper:
+If you are interested in using our code and find it useful in your research, please consider citing the following paper:
 
 ```latex
 @article{article,
