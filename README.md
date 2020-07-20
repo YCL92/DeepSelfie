@@ -40,7 +40,7 @@ Please note that the libraw installed via apt-get is an outdated version, if you
 
 ### Run Demo
 
-To run demo, download the pretrained models from here, unzip and copy the files to "saves" folder, add your .DNG files to "samples" folder, then run the following command:
+To run demo, download the pretrained models from [onedrive](https://dongguk0-my.sharepoint.com/:f:/g/personal/yc_lu_dongguk_edu/EoIwKeaFgZhAj9UaLoxVWDEBX3Yhs07mpXyJn5Y_Xj6aTQ?e=30kDcX), unzip and copy the files to "saves" folder, add your .DNG files to "samples" folder, then run the following command:
 
 `python ./demo.py`
 
@@ -66,12 +66,12 @@ The output images are not calibrated and thus have distortion, if you want to do
 
 ### Train from scratch
 
-Before training from scratch, you need to first download the FivekNight dataset from here. Also, you need to use your camera to take some images (the more the better, with various exposure level and ISO) in RAW format. To start training, follow the instructions below:
+Before training from scratch, you need to first download the FivekNight dataset from [onedrive](https://dongguk0-my.sharepoint.com/:f:/g/personal/yc_lu_dongguk_edu/EoIwKeaFgZhAj9UaLoxVWDEBX3Yhs07mpXyJn5Y_Xj6aTQ?e=30kDcX). Also, you need to use your camera to take some images (the more the better, with various exposure levels and ISO) in RAW format. To start training, follow the instructions below:
 
 1. Generate training dataset for r2rNet by running "genDB-r2rNet.ipynb" under /dataset.
 2. Get the statistical information of your own dataset by running "getStat_r2rNet.ipynb" under /dataset, copy the results to "config.ipynb" under /.
 3. Train r2rNet by running "train-dataloader.ipynb" under /, you may want to specify a new port for Visdom.
-4. Generate validation set by running "genValset.ipynb" under /, this step should be performed after r2rNet training is completed.
+4. Generate validation dataset by running "genValset.ipynb" under /, this step should be performed after r2rNet training is completed.
 5. Train the gain estimation network by running "train-gainEst.ipynb" under /, you may want to specify a new port for Visdom.
 6. Train the raw processing network by running "train-rawProcess.ipynb" under /, you may want to specify a new port for Visdom.
 
